@@ -1,3 +1,9 @@
-import { ButtonHTMLAttributes } from "react";
+import { ReactNode, MouseEvent } from "react";
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export interface ButtonProps {
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
+  children: ReactNode;
+  type?: "button" | "submit" | "reset";
+  disabled?: boolean;
+  variant?: "primary" | "secondary";
+}
