@@ -5,6 +5,9 @@
     "build": "rimraf dist && rollup -c",
     "prepublishOnly": "npm run build"
   },
+  "publishConfig": {
+    "@peeranat-dan:registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "author": "Nin",
   "license": "ISC",
